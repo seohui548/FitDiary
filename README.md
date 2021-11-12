@@ -8,7 +8,8 @@ seohui
 slee288
 jiyeon
 
-##Commit Rule
+## Commit Rule
+
 🐛fix : 버그 수정
 🧸feat : 새로운 기능
 
