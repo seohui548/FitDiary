@@ -1,9 +1,9 @@
 # FitDiary
 
-###Description
+### Description
 Add your Event!! For Your Wellness!
 
-###Contributor
+### Contributor
 seohui
 slee288
 
