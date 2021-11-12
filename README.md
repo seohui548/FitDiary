@@ -6,7 +6,6 @@ Add your Event!! For Your Wellness!
 ### Contributor
 seohui
 slee288
-
 jiyeon
 
 ##Commit Rule
