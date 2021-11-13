@@ -4,7 +4,10 @@
         <meta charset="utf-8">
         <title>FitDiary</title>
         <link href="/static/css/home.css" rel="stylesheet" />
-        <script src="/static/scripts/diary-scheduler.js"></script>
+        <script src="/static/scripts/db-loader.js" defer="defer"></script>
+        <script src="/static/scripts/diary-scheduler.js" defer="defer"></script>
+        <script src="/static/scripts/activity-btn.js" defer="defer"></script>
+        <script src="/static/scripts/ticket-popup.js" defer="defer"></script>
     </head>
     <body>
       <div class="diary-book">
@@ -27,22 +30,28 @@
                 <button class="nav-btn">Skiing</button>
               </div>
               <div class="db-listing">
-                <div class="db-element">
-                  <div class="db-element__image">
-                    <img src="/static/images/image_14.png">
+                <div class="db-listing__container">
+                  <div class="db-element">
+                    <activity-btn class="db-elem-btn" data-activity-id="brian_yoga">
+                      <div class="db-element__image">
+                        <img src="/static/images/image_14.png">
+                      </div>
+                      <div class="db-element__text">
+                        <h3>Brian's Yoga Class</h3>
+                        <p>M/W/F 11:30 ~ 12:30</p>
+                      </div>
+                    </activity-btn>
                   </div>
-                  <div class="db-element__text">
-                    <h3>Brian's Yoga Class</h3>
-                    <p>M/W/F 11:30 ~ 12:30</p>
-                  </div>
-                </div>
-                <div class="db-element">
-                  <div class="db-element__image">
-                    <img src="/static/images/image_15.png">
-                  </div>
-                  <div class="db-element__text">
-                    <h3>Sally's Yoga Class</h3>
-                    <p>M/F 7:30 ~ 8:30</p>
+                  <div class="db-element">
+                    <activity-btn class="db-elem-btn" data-activity-id="sally_yoga">
+                      <div class="db-element__image">
+                        <img src="/static/images/image_15.png">
+                      </div>
+                      <div class="db-element__text">
+                        <h3>Sally's Yoga Class</h3>
+                        <p>M/F 7:30 ~ 8:30</p>
+                      </div>
+                    </activity-btn>
                   </div>
                 </div>
               </div>
@@ -50,5 +59,25 @@
           </div>
         </div>
       </div>
+      <ticket-popup class="ticket__popup">
+        <div class="ticket__popup-wrapper ticket-format">
+          <div class="ticket__image">
+            <img src="/static/images/image_17.png">
+          </div>
+          <div class="ticket__information">
+            <div class="ticket-gradient"></div>
+            <div class="ticket-textcontent">
+              <h3>Group Yoga Class</h3>
+              <p>M/W 15:00 ~ 16:00</p>
+              <p>Hailey Studio, 4F, NYC</p>
+              <p>23/30</p>
+            </div>
+            <div class="ticket-gradient"></div>
+          </div>
+          <div class="ticket__action">
+            <button class="ticket-btn">Add to my schedule</button>
+          </div>
+        </div>
+      </ticket-popup>
     </body>
 </html>
