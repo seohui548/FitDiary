@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "Gorditas";
+  src: url("../font/Gorditas-Regular.ttf");
+}
+@font-face {
+  font-family: "Kranky";
+  src: url("../font/Kranky-Regular.ttf");
+}
+@font-face {
+  font-family: "Kefa";
+  src: url("../Kefa-Regular.ttf");
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Gorditas";
+  font-weight: 400;
+}
+
+.diary-book {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.ticket-format {
+  background-color: #f9de33;
+  max-width: max-content;
+  border: 3px solid #3ab0d1;
+  margin: 0 auto;
+  position: relative;
+}
+.ticket-format::before,
+.ticket-format::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 1rem;
+  height: 1rem;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.ticket-format::before {
+  left: 0;
+  transform: translateY(-50%) translateX(calc(-50% - 3px)) rotate(45deg);
+  border-right: 3px solid #3ab0d1;
+  border-top: 3px solid #3ab0d1;
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+.ticket-format::after {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) translateX(calc(50% + 3px)) rotate(45deg);
+  border-left: 3px solid #3ab0d1;
+  border-bottom: 3px solid #3ab0d1;
+  border-right: 3px solid #fff;
+  border-top: 3px solid #fff;
+}
+
+.db-title h1 {
+  font-size: 3.2rem;
+  margin: 0;
+  padding: 5px 40px;
+  line-height: 1.1;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.diary-book__body {
+  padding: 2rem;
+}
+.diary-book__body-container {
+  display: flex;
+  justify-content: center;
+}
+
+.db-navigation {
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+}
+.db-navigation .nav-btn {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  border: none;
+  background-color: #3ab0d1;
+  color: #fff;
+  border-radius: 10px 0 0 10px;
+  cursor: pointer;
+  padding: 10px 5px;
+  font-size: 1.2rem;
+  letter-spacing: -4px;
+}
+.db-navigation .nav-btn:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.db-listing {
+  padding: 3rem 2rem;
+  background-color: #3ab0d1;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  grid-gap: 20px;
+}
+.db-element {
+  width: 50%;
+  cursor: pointer;
+}
+.db-element__text {
+  background: #fff;
+  text-align: center;
+  padding: 5px 0;
+}
+.db-element__image img {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+}
+.db-element__text h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-family: "Kranky";
+}
+.db-element__text p {
+  font-size: 15px;
+  margin: 0;
+  font-family: "Kefa";
+}
