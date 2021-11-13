@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require("path");
-
+const calendar = require("./public/scripts/calendar-config");
 const app = express()
 
 app.set("view engine", "ejs");
@@ -11,8 +11,12 @@ app.get('/', (req, res) => {
     res.render("home");
 })
 
-app.get('/api/user', (req, res) => {
-    res.json('hi, user')
+app.get('/calendar', (req, res) => {
+    const year = req.query.year || 2021;
+    const months = ["January", "February", "March", "April", "May", "June", "July",
+        "August", "September", "October", "November", "December"];
+    
+    res.render("calendar", {calendar: calendar(year),months,year});
 })
 
 app.listen(5000, () => {
