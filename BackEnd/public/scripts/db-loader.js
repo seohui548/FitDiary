@@ -19,6 +19,35 @@ window.activities = {
       max_capacity: 16,
       current_capacity: 16,
       recurring: true
+    },
+    {
+      id: "group_yoga",
+      imgurl: "image_17.png",
+      title: "Group Yoga Class",
+      date: "M/W 15:00 ~ 16:30",
+      address: "Hailey Studio, 4F, NYC",
+      max_capacity: 20,
+      current_capacity: 14,
+      recurring: true
+    },    {
+      id: "jina_yoga",
+      imgurl: "image_16.png",
+      title: "JIna's Yoga Class",
+      date: "M/F 7:30 ~ 8:30",
+      address: "Hailey Studio, 4F, NYC",
+      max_capacity: 16,
+      current_capacity: 16,
+      recurring: true
+    }
+    ,    {
+      id: "outdoor_yoga",
+      imgurl: "image_18.png",
+      title: "Outdoor Group Yoga",
+      date: "TU/TH 8:00 ~ 9:30",
+      address: "Hailey Studio, 4F, NYC",
+      max_capacity: 16,
+      current_capacity: 10,
+      recurring: true
     }
   ],
   "pilates": [
@@ -29,6 +58,36 @@ window.activities = {
       date: "M/W/F 11:30 ~ 12:30",
       address: "Hailey Studio, 4F, NYC",
       max_capacity: 17,
+      current_capacity: 11,
+      recurring: true
+    },
+    {
+      id: "JiJi_Pilates",
+      imgurl: "image_20.png",
+      title: "JiJi's Pilates Class",
+      date: "M/F 7:30 ~ 8:30",
+      address: "Hailey Studio, 4F, NYC",
+      max_capacity: 17,
+      current_capacity: 11,
+      recurring: true
+    },
+    {
+      id: "Group_Pilates",
+      imgurl: "image_21.png",
+      title: "Group Pilates Class",
+      date: "M/W 15:00 ~ 16:30",
+      address: "Hailey Studio, 4F, NYC",
+      max_capacity: 8,
+      current_capacity: 1,
+      recurring: true
+    },
+    {
+      id: "Group_Pilates2",
+      imgurl: "image_22.png",
+      title: "Group Pilates Class",
+      date: "M/W/F 11:30 ~ 12:30",
+      address: "Hailey Studio, 4F, NYC",
+      max_capacity: 27,
       current_capacity: 11,
       recurring: true
     }
@@ -107,6 +166,16 @@ window.activities = {
   ],
   "ballet": [
     {
+      id: "Group_ballet",
+      imgurl: "image_42.png",
+      title: "Group Ballet Class",
+      date: "M/W/F 11:30 ~ 12:30",
+      address: "Hailey Studio, 4F, NYC",
+      max_capacity: 30,
+      current_capacity: 28,
+      recurring: true
+    },
+    {
       id: "personal_ballet",
       imgurl: "image_28.png",
       title: "Personal Ballet Class",
@@ -114,6 +183,16 @@ window.activities = {
       address: "Hailey Studio, 4F, NYC",
       max_capacity: 13,
       current_capacity: 13,
+      recurring: true
+    },
+    {
+      id: "couple_ballet",
+      imgurl: "image_29.png",
+      title: "Couple Ballet Class",
+      date: "Sat 20:30 ~ 21:30",
+      address: "Hailey Studio, 4F, NYC",
+      max_capacity: 10,
+      current_capacity: 4,
       recurring: true
     }
   ],
