@@ -131,14 +131,14 @@ diary-book {
 }
 .db-redirector {
   position: absolute;
-  min-width: 40px;
-  right: 20px;
+  min-width: 60px;
+  right: 15px;
   padding: 10px 5px 30px;
   top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #a52a2a;
+  background-color: #c52a2a;
   color: #fff;
   transition: 0.2s background-color;;
 }
@@ -148,8 +148,8 @@ diary-book {
   width: 0;
   height: 0;
   border-bottom: 20px solid #eee;
-  border-right: 22px solid transparent;
-  border-left: 22px solid transparent;
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent;
   bottom: 0;
 }
 .db-redirector:hover {
@@ -157,7 +157,7 @@ diary-book {
 }
 .db-redirector span {
   font-family: "Gorditas";
-  font-size: 24px;
+  font-size: 32px;
   padding-bottom: 5px;
   cursor: pointer;
   transition: 0.2s color;
@@ -317,6 +317,11 @@ activity-btn[disabled] .db-element__image::after {
   margin: 0;
   font-size: 16px;
 }
+.ticket__popup-wrapper .ticket-textcontent .disclaimer {
+  font-size: 15px;
+  margin: 20px 0;
+  color: #ee1111;
+}
 .ticket__popup-wrapper .ticket-gradient {
   height: 40px;
   background-image: repeating-linear-gradient(-45deg,
@@ -333,7 +338,6 @@ activity-btn[disabled] .db-element__image::after {
 }
 .ticket__popup-wrapper .ticket__action .ticket-btn {
   writing-mode: tb-rl;
-  background-color: #3ab0d1;
   border: none;
   border-radius: 8px;
   display: block;
@@ -349,10 +353,19 @@ activity-btn[disabled] .db-element__image::after {
   opacity: 0.4;
   cursor: not-allowed;
 }
-.ticket__popup-wrapper .ticket__action .ticket-btn:hover {
+
+.ticket__popup-wrapper .ticket__action .ticket-btn[data-feature-type="add"] {
+  background-color: #3ab0d1;
+}
+.ticket__popup-wrapper .ticket__action .ticket-btn[data-feature-type="add"]:hover {
   background-color: #078090;
 }
-
+.ticket__popup-wrapper .ticket__action .ticket-btn[data-feature-type="remove"] {
+  background-color: #c52a2a;
+}
+.ticket__popup-wrapper .ticket__action .ticket-btn[data-feature-type="remove"]:hover {
+  background-color: #800808;
+}
 
 @keyframes listtransition {
   from { opacity: 0; }
