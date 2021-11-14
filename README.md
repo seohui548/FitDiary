@@ -38,7 +38,7 @@ What you would be able to notice is that some of them are already full. If the c
 
 ## Main Page 🙌
 
-<p align="center"><img src="https://user-images.githubusercontent.com/44580674/141679447-a4c3641f-6c27-4dcc-b6b4-737003b1aa43.gif" alt="mainevent" width="250" height="250"/></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/44580674/141679447-a4c3641f-6c27-4dcc-b6b4-737003b1aa43.gif" alt="mainevent" width="50%" height="50%"/></p>
 
 What you only have to do is click on the class icon, then the ticket comes up.
 
