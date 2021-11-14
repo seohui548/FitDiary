@@ -10,6 +10,10 @@
   font-family: "Gorditas";
   src: url("../font/Gorditas-Regular.ttf");
 }
+@font-face {
+  font-family: "Glegoo";
+  src: url("../font/Glegoo-Regular.ttf");
+}
 
 html,
 body {
@@ -180,6 +184,7 @@ table.timetable td {
   vertical-align: top;
   border-bottom: 1px solid #ccc;
   position: relative;
+  display: flex;
 }
 .memo {
   width: 90%;
@@ -211,7 +216,24 @@ table.timetable td {
 }
 #events {
   background-color: lightpink;
+  max-height: 100%;
 }
 #events2 {
   background-color: lightskyblue;
+}
+.boxtitle {
+  background-color: #ff6969;
+  font-family: "Glegoo";
+  padding: 20px;
+  position: relative;
+  display: inline;
+}
+
+.boxtitle2 {
+  font-family: "Glegoo";
+  padding: 20px;
+  position: relative;
+  display: inline;
+  margin-left: 5em;
+  margin-right: 5em;
 }
