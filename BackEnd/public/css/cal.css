@@ -75,6 +75,8 @@ header > h1 {
   background-color: #3ab0d1;
   padding-left: 1em;
   padding-right: 1em;
+  max-width: 1180px;
+  margin: 0 auto;
 }
 .foot {
   height: 3em;
@@ -117,7 +119,7 @@ header > h1 {
 }
 
 .day-of-week > span {
-  height: 4vh;
+  line-height: 1;
   text-align: center;
   font-family: "Joti";
   color: gray;
@@ -133,16 +135,21 @@ header > h1 {
   border-style: solid;
   border-color: #42aae4;
   background-color: white;
+  min-height: 13rem;
 }
 
 .date {
-  height: 14vh;
   text-align: center;
   font-family: "Lato";
   background-color: white;
 }
+.day-indicator {
+  display: block;
+  padding: 10px 0;
+}
 .content-events {
   background-color: #ffd9d9;
+  margin-bottom: 5px;
 }
 .content-events2 {
   background-color: #d2f0ff;
