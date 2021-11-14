@@ -151,7 +151,7 @@ header > h1 {
 table.timetable {
   border-collapse: separate;
   border-spacing: 1px;
-  text-align: left;
+  text-align: center;
   line-height: 1.5;
   border-top: 1px solid #ccc;
   border: 0.8em solid #3ab0d1;
@@ -168,15 +168,18 @@ table.timetable th {
   border-right: 0.8em solid #3ab0d1;
 }
 table.timetable td {
-  width: 350px;
+  width: 600px;
   padding: 10px;
   vertical-align: top;
   border-bottom: 1px solid #ccc;
+  position: relative;
 }
 .memo {
   width: 90%;
   height: 90%;
-  background-color: #f9de33;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 .table-container {
   text-align: center;
@@ -184,4 +187,21 @@ table.timetable td {
   padding-right: 0.8em;
   background-color: #f9de33;
   position: relative;
+  display: flex;
+  justify-content: center;
+}
+.table-title {
+  font-family: "Gorditas";
+  color: #ffffff;
+  font-size: 30px;
+  background-color: #3ab0d1;
+  position: absolute;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 0.5em;
+}
+#events {
+  background-color: lightpink;
 }
