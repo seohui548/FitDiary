@@ -21,11 +21,11 @@ class DayPopup extends HTMLElement {
   closePopup() {
     this.classList.remove("active");
   }
-  renderDay() {
+  renderDay(dayOfMonth) {
     const dayHTML = `
       <div class="memo">
         <div class="table-container">
-          <div class="table-title" id="<%= id[id] %>"> 11.&nbsp;  04.&nbsp;   Fri</div>
+          <div class="table-title" id="<%= id[id] %>"> 11.&nbsp;  ${dayOfMonth}.&nbsp;   Fri</div>
           <table class="timetable">
             <tr>
               <th scope="row">6</th>
@@ -107,6 +107,19 @@ class DayPopup extends HTMLElement {
       </div>
     `;
     this.innerHTML = dayHTML;
+    this.deleteAction();
+  }
+
+  deleteAction() {
+    const deleteBtns = this.querySelectorAll(".boxtitle3");
+    deleteBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const tab_row = btn.closest("td");
+        tab_row.setAttribute("id", "");
+        tab_row.innerHTML = "";
+        alert("The event has been removed from your schedule!");
+      });
+    });
   }
 }
 
