@@ -48,6 +48,10 @@ Also, you can find the add button on the right. You can register for the class a
 
 If you want to check your calendar, find the bookmark on the top right of the screen. Then click on ‘my diary’.
 
+
+
+## My Diary Page 📌
+
 <p align="center"><img src="https://user-images.githubusercontent.com/44580674/141679451-886b2257-f099-447b-94a2-4b81defd3bd0.gif" alt="dayevent" width="40%" height="40%" /></p>
 
 Okay, we’re on a my diary page, which is a personal workout calendar.
