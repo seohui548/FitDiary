@@ -35,13 +35,11 @@ class DayPopup extends HTMLElement {
           </tr>
           <tr>
             <th scope="row">7</th>
-            <td id="events">
-            <div classs="events"></div>
+            <td id="events" rowspan="2">
             </td>
           </tr>
           <tr>
             <th scope="row">8</th>
-            <td id="events"> </td>
           </tr>
           <tr>
             <th scope="row">9</th>
@@ -65,11 +63,10 @@ class DayPopup extends HTMLElement {
           </tr>
           <tr>
             <th scope="row">14</th>
-            <td> </td>
+            <td id="events2" rowspan="2"> </td>
           </tr>
           <tr>
             <th scope="row">15</th>
-            <td> </td>
           </tr>
           <tr>
             <th scope="row">16</th>
