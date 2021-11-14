@@ -24,19 +24,22 @@ class DayPopup extends HTMLElement {
   renderDay() {
     const dayHTML = `
       <div class="memo">
+
         <div class="table-container">
+        <div class="table-title" id="<%= id[id] %>">11. 04  fri</div>
           <table class="timetable">
           <tr>
             <th scope="row">6</th>
-            <td></td>
+            <td>
+            </td>
           </tr>
           <tr>
             <th scope="row">7</th>
-            <td></td>
+            <td id="events" rowspan="2">
+            </td>
           </tr>
           <tr>
             <th scope="row">8</th>
-            <td> </td>
           </tr>
           <tr>
             <th scope="row">9</th>
@@ -60,11 +63,10 @@ class DayPopup extends HTMLElement {
           </tr>
           <tr>
             <th scope="row">14</th>
-            <td> </td>
+            <td id="events2" rowspan="2"> </td>
           </tr>
           <tr>
             <th scope="row">15</th>
-            <td> </td>
           </tr>
           <tr>
             <th scope="row">16</th>
