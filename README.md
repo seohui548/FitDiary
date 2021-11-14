@@ -71,8 +71,8 @@ we hope that people can easily access information about diverse fitness programs
 <br/>
 <p float="left">
 <img src="https://user-images.githubusercontent.com/44580674/141680749-3e2d76e7-1c5d-4012-be4f-0d97ed2c20b4.jpg" alt="mlh" width="20%" height="20%"/>
-<img src="https://user-images.githubusercontent.com/44580674/141680750-ddaed050-c2ed-40b5-af4e-46f368ce56fc.png" alt="dev" width="40%" height="40%"/>
-<img src="https://user-images.githubusercontent.com/44580674/141680752-cfe81075-d44c-4911-8545-995a3d2de69f.png" alt="HackFit_slideshow" width="40%" height="40%"/>
+<img src="https://user-images.githubusercontent.com/44580674/141680750-ddaed050-c2ed-40b5-af4e-46f368ce56fc.png" alt="dev" width="30%" height="30%"/>
+<img src="https://user-images.githubusercontent.com/44580674/141680752-cfe81075-d44c-4911-8545-995a3d2de69f.png" alt="HackFit_slideshow" width="30%" height="30%"/>
 </p>
 <br/>
 <br/>
