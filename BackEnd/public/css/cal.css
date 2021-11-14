@@ -244,6 +244,9 @@ table.timetable td {
 .boxtitle2 {
   width: 100%;
 }
+.boxtitle3 {
+  cursor: pointer;
+}
 .boxtitle4 {
   background-color: #3ab0d1;
   width: 350px;

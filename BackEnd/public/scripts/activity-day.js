@@ -24,7 +24,8 @@ class ActivityDayBtn extends HTMLElement {
   }
 
   openEvent() {
-    this.dayPopup.renderDay()
+    const dayOfMonth = this.dayContainer.id;
+    this.dayPopup.renderDay(dayOfMonth);
 
     this.dayPopup.openPopup();
   }
