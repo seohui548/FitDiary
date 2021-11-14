@@ -13,7 +13,9 @@ Add your Event!! For Your Wellness!
 
 
 
-
+<br/>
+<br/>
+<br/>
 
 > #### Introduce
 >
@@ -34,7 +36,8 @@ But where to start?
 As you can see diverse workout categories are organized on the left side. You can check out the sessions by just clicking them.
 
 What you would be able to notice is that some of them are already full. If the class is full, you can’t of course register for it, but if any vacancy arises you can sign up.
-
+<br/>
+<br/>
 
 
 ## Main Page 🙌
@@ -49,7 +52,8 @@ Also, you can find the add button on the right. You can register for the class a
 
 If you want to check your calendar, find the bookmark on the top right of the screen. Then click on ‘my diary’.
 
-
+<br/>
+<br/>
 
 ## My Diary Page 📌
 
@@ -74,6 +78,7 @@ we hope that people can easily access information about diverse fitness programs
 <img src="https://user-images.githubusercontent.com/44580674/141680752-cfe81075-d44c-4911-8545-995a3d2de69f.png" alt="HackFit_slideshow" width="30%" height="30%"/>
 <img src="https://user-images.githubusercontent.com/44580674/141680750-ddaed050-c2ed-40b5-af4e-46f368ce56fc.png" alt="dev" width="30%" height="30%"/>
 </p>
+- [HackFit](https://organize.mlh.io/participants/events/7563-hackfit)
 <br/>
 <br/>
 Thank you!! 🍕
