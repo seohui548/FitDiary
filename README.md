@@ -6,9 +6,10 @@ Add your Event!! For Your Wellness!
 
 ### Contributor
 
-- seohui
--  slee288
--  jiyeon
+-  [seohui](https://github.com/seohui548)
+-  [slee288](https://github.com/slee288)
+-  [jiyeon]()
+-  [Gunyoung]()
 
 
 
