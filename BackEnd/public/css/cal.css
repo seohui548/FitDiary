@@ -138,16 +138,18 @@ table.timetable {
   text-align: left;
   line-height: 1.5;
   border-top: 1px solid #ccc;
+  border: 0.8em solid #3ab0d1;
   margin: 20px 10px;
+  background-color: #ffffff;
 }
 table.timetable th {
   width: 80px;
   padding: 10px;
   font-weight: bold;
   vertical-align: top;
+  text-align: center;
   border-bottom: 1px solid #ccc;
-  border-left: 1px solid #3ab0d1;
-  border-right: 1px solid #3ab0d1;
+  border-right: 0.8em solid #3ab0d1;
 }
 table.timetable td {
   width: 350px;
@@ -162,8 +164,8 @@ table.timetable td {
 }
 .table-container {
   text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
-  background-color: white;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  background-color: #f9de33;
   position: relative;
 }
