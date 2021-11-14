@@ -8,7 +8,7 @@ Add your Event!! For Your Wellness!
 
 -  [seohui](https://github.com/seohui548)
 -  [slee288](https://github.com/slee288)
--  [jiyeon]()
+-  [jiyeon](https://github.com/jiyeon4225)
 -  [Gunyoung]()
 
 
