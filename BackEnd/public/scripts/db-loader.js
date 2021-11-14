@@ -52,9 +52,9 @@ window.activities = {
   ],
   "pilates": [
     {
-      id: "kelly_yoga",
+      id: "kelly_pilates",
       imgurl: "image_19.png",
-      title: "Kelly's Yoga Class",
+      title: "Kelly's Pilates Class",
       date: "M/W/F 11:30 ~ 12:30",
       address: "Hailey Studio, 4F, NYC",
       max_capacity: 17,
@@ -306,7 +306,7 @@ window.activities = {
     {
       id: "Child Group Skiing",
       imgurl: "image_40.png",
-      title: "Group Class",
+      title: "Child Group Skiing",
       date: "M/F 7:30 ~ 8:30",
       address: "Hailey Studio, 4F, NYC",
       max_capacity: 28,
