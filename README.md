@@ -78,7 +78,8 @@ we hope that people can easily access information about diverse fitness programs
 <img src="https://user-images.githubusercontent.com/44580674/141680752-cfe81075-d44c-4911-8545-995a3d2de69f.png" alt="HackFit_slideshow" width="30%" height="30%"/>
 <img src="https://user-images.githubusercontent.com/44580674/141680750-ddaed050-c2ed-40b5-af4e-46f368ce56fc.png" alt="dev" width="30%" height="30%"/>
 </p>
-- [HackFit](https://organize.mlh.io/participants/events/7563-hackfit)
+
+-  [HackFit](https://organize.mlh.io/participants/events/7563-hackfit)
 <br/>
 <br/>
 Thank you!! 🍕
