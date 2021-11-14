@@ -17,7 +17,7 @@ window.activities = {
       date: "M/F 7:30 ~ 8:30",
       address: "Hailey Studio, 4F, NYC",
       max_capacity: 16,
-      current_capacity: 16,
+      current_capacity: 10,
       recurring: true
     },
     {
