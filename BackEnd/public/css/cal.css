@@ -169,11 +169,14 @@ table.timetable {
   margin: 20px 10px;
   background-color: #ffffff;
 }
+table.timetable tr {
+  max-height: 45px;
+}
 table.timetable th {
   width: 80px;
   padding: 10px;
   font-weight: bold;
-  vertical-align: top;
+  vertical-align: middle;
   text-align: center;
   border-bottom: 1px solid #ccc;
   border-right: 0.8em solid #3ab0d1;
@@ -185,29 +188,26 @@ table.timetable td {
   border-bottom: 1px solid #ccc;
   position: relative;
   display: flex;
+  height: 80px;
 }
 .memo {
-  width: 90%;
   height: 90%;
   position: relative;
-  display: flex;
-  justify-content: center;
 }
 .table-container {
   text-align: center;
-  padding-left: 0.8em;
-  padding-right: 0.8em;
+  padding: 1rem 0.8em;
   background-color: #f9de33;
   position: relative;
-  display: flex;
-  justify-content: center;
+  margin-bottom: 2rem;
 }
 .table-title {
   font-family: "Gorditas";
   color: #ffffff;
   font-size: 30px;
   background-color: #3ab0d1;
-  position: absolute;
+  max-width: max-content;
+  margin: 0 auto;
   top: 0px;
   display: flex;
   justify-content: center;
@@ -221,7 +221,24 @@ table.timetable td {
 #events2 {
   background-color: lightskyblue;
 }
+.boxtitle, .boxtitle2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Glegoo";
+  padding: 0 20px;
+  font-size: 15px;
+  line-height: 1.2;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
 .boxtitle {
+  background-color: #ff6969;
+}
+.boxtitle2 {
+  width: 100%;
+}
+/* .boxtitle {
   background-color: #ff6969;
   font-family: "Glegoo";
   padding: 20px;
@@ -236,4 +253,4 @@ table.timetable td {
   display: inline;
   margin-left: 5em;
   margin-right: 5em;
-}
+} */

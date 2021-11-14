@@ -16,6 +16,8 @@ class DiaryBook extends HTMLElement {
         btn.addEventListener("click", this.switchActivities.bind(this, btn));
       });
     }
+
+    this.renderEvents("yoga");
   }
 
   switchActivities(catBtn) {

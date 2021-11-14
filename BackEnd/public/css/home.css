@@ -260,6 +260,7 @@ activity-btn[disabled] .db-element__image::after {
   justify-content: center;
   visibility: hidden;
   opacity: 0;
+  overflow-y: auto;
   transition: 0.3s visibility, 0.3s opacity;
 }
 .ticket__popup.active {
