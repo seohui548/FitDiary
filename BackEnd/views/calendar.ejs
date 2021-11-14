@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Diary</title>
+    <link href="/static/css/cal.css" rel="stylesheet" />
+    <link href="/static/css/home.css" rel="stylesheet" />
+    <script src="/static/scripts/calendar-config.js" defer="defer"></script>
+    <script src="/static/scripts/day-popup.js"></script>
+    <script src="/static/scripts/activity-day.js" defer="defer"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="db-title ticket-format2">
+            <h1>My Diary</h1>
+          </div>
+    </header>
+
+
+    <div class="calendar-container">
+        <div class="month-container" id="<%= months[10] %>">
+            <div class="tri"><h3><%= months[10] %></h3></div>
+            <div class="day-of-week">
+                <span>Sun</span><span>Mon</span><span>Tue</span><span>
+                    Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+            </div>
+            <% for(let x = 0;x < calendar[10].length;x++) { %>
+            <div class="days">
+                <% for(let y = 0;y < calendar[10][x].length;y++) { %>
+                <div class="date" >
+                    <activity-day class="db-elem-btn">
+                        <div id="<%=calendar[10][x][y] %>">
+                            <%= calendar[10][x][y] %> <div class="content-events">Sally’s Yoga Class</div><div class="content-events2">Group Pilates Class</div>
+                        </div>
+                    </activity-day>
+                </div>
+                <% } %>
+            </div>
+            <% } %>
+        </div>
+    </div>
+    <div class="foot"></div>
+    <day-popup class="ticket__popup">
+        <div class="ticket__popup-wrapper ticket-format">
+          <div class="ticket__image">
+            <img src="/static/images/image_17.png">
+          </div>
+          <div class="ticket__information">
+            <div class="ticket-gradient"></div>
+            <div class="ticket-textcontent">
+              <h3>Group Yoga Class</h3>
+              <p>M/W 15:00 ~ 16:00</p>
+              <p>Hailey Studio, 4F, NYC</p>
+              <p>23/30</p>
+            </div>
+            <div class="ticket-gradient"></div>
+          </div>
+          <div class="ticket__action">
+            <button class="ticket-btn">Add to my schedule</button>
+          </div>
+        </div>
+      </day-popup>
+</body>
+
+</html>
