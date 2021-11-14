@@ -38,7 +38,7 @@ What you would be able to notice is that some of them are already full. If the c
 
 ## Main Page 🙌
 
-<p align="center"><img src="https://user-images.githubusercontent.com/44580674/141679447-a4c3641f-6c27-4dcc-b6b4-737003b1aa43.gif" alt="mainevent" width="50%" height="50%"/></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/44580674/141679447-a4c3641f-6c27-4dcc-b6b4-737003b1aa43.gif" alt="mainevent" width="40%" height="40%"/></p>
 
 What you only have to do is click on the class icon, then the ticket comes up.
 
@@ -48,7 +48,7 @@ Also, you can find the add button on the right. You can register for the class a
 
 If you want to check your calendar, find the bookmark on the top right of the screen. Then click on ‘my diary’.
 
-<p align="center"><img src="https://user-images.githubusercontent.com/44580674/141679451-886b2257-f099-447b-94a2-4b81defd3bd0.gif" alt="dayevent" style="zoom:50%;" /></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/44580674/141679451-886b2257-f099-447b-94a2-4b81defd3bd0.gif" alt="dayevent" width="40%" height="40%" /></p>
 
 Okay, we’re on a my diary page, which is a personal workout calendar.
 
