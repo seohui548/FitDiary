@@ -25,7 +25,7 @@ class DayPopup extends HTMLElement {
     const dayHTML = `
       <div class="memo">
         <div class="table-container">
-          <div class="table-title" id="<%= id[id] %>">11. 04  fri</div>
+          <div class="table-title" id="<%= id[id] %>"> 11.&nbsp;  04.&nbsp;   Fri</div>
           <table class="timetable">
             <tr>
               <th scope="row">6</th>
@@ -38,6 +38,7 @@ class DayPopup extends HTMLElement {
               <div class="boxtitle"> Sally's yoga class </div>
               <div class="boxtitle2"> 7:30-:8:30 <br> Zebra Studio,  <br>
               23 AVE, NYC</div>
+              <div class="boxtitle3"> <img src="/static/images/close_icon.png"></div>
               </td>
             </tr>
             <tr>
@@ -66,7 +67,12 @@ class DayPopup extends HTMLElement {
             </tr>
             <tr>
               <th scope="row">14</th>
-              <td> </td>
+              <td id="events2" rowspan="2">
+              <div class="boxtitle4"> Group Pilates class </div>
+              <div class="boxtitle5"> 14:00-: 15:00 <br> Ryerson Public Center,  <br>
+              23 AVE, NYC</div>
+              <div class="boxtitle3"> <img src="/static/images/close_icon.png"></div>
+              </td>
             </tr>
             <tr>
               <th scope="row">15</th>

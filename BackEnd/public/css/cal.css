@@ -12,7 +12,7 @@
 }
 @font-face {
   font-family: "Glegoo";
-  src: url("../font/Glegoo-Regular.ttf");
+  src: url("../font/Glegoo-Bold.ttf");
 }
 
 html,
@@ -204,9 +204,10 @@ table.timetable td {
 .table-title {
   font-family: "Gorditas";
   color: #ffffff;
-  font-size: 30px;
+  font-size: 40px;
   background-color: #3ab0d1;
-  max-width: max-content;
+  /*max-width: 350px;*/
+  max-width: 350px;
   margin: 0 auto;
   top: 0px;
   display: flex;
@@ -221,7 +222,10 @@ table.timetable td {
 #events2 {
   background-color: lightskyblue;
 }
-.boxtitle, .boxtitle2 {
+.boxtitle,
+.boxtitle2,
+.boxtitle4,
+.boxtitle5 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -234,8 +238,18 @@ table.timetable td {
 }
 .boxtitle {
   background-color: #ff6969;
+  width: 350px;
+  font-size: 20px;
 }
 .boxtitle2 {
+  width: 100%;
+}
+.boxtitle4 {
+  background-color: #3ab0d1;
+  width: 350px;
+  font-size: 20px;
+}
+.boxtitle5 {
   width: 100%;
 }
 /* .boxtitle {
