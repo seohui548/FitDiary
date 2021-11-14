@@ -5,6 +5,8 @@
         <title>FitDiary</title>
         <link href="/static/css/home.css" rel="stylesheet" />
         <link href="/static/css/color-encoding.css" rel="stylesheet" />
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="/static/scripts/db-loader.js" defer="defer"></script>
 
         <script src="/static/scripts/diary-book.js" defer="defer"></script>
@@ -33,6 +35,10 @@
                 <button class="nav-btn" data-fit-category="skiing" data-color="f4f2db">Skiing</button>
               </div>
               <div class="db-listing">
+                <div class="db-redirector">
+                  <span>GO</span>
+                  <a id="mydiary" href="/calendar">MyDiary</a>
+                </div>
                 <div class="db-listing__container">
                   <div class="db-element">
                     <activity-btn class="db-elem-btn" data-activity-id="brian_yoga">
@@ -83,4 +89,11 @@
         </div>
       </ticket-popup>
     </body>
+
+    <script>
+      $(".db-redirector span").click(function() {
+        $(this).toggleClass("slideopen");
+        $("#mydiary").slideToggle();
+      })
+    </script>
 </html>
