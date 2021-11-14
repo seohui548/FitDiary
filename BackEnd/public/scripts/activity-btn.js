@@ -19,7 +19,7 @@ class ActivityBtn extends HTMLElement {
     const category = this.activeCategory ? this.activeCategory.dataset.fitCategory : "yoga";
     const activityListing = window.activities[category];
 
-    const activity = activityListing.filter((al) => { console.log(al.id); return al.id === this.activityId })[0];
+    const activity = activityListing.filter((al) => { return al.id === this.activityId })[0];
 
     this.ticketPopup.renderTicket(activity, this.inMyEventList(activity));
 
