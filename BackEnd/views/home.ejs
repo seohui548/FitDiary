@@ -4,13 +4,16 @@
         <meta charset="utf-8">
         <title>FitDiary</title>
         <link href="/static/css/home.css" rel="stylesheet" />
+        <link href="/static/css/color-encoding.css" rel="stylesheet" />
         <script src="/static/scripts/db-loader.js" defer="defer"></script>
+
+        <script src="/static/scripts/diary-book.js" defer="defer"></script>
         <script src="/static/scripts/diary-scheduler.js" defer="defer"></script>
         <script src="/static/scripts/activity-btn.js" defer="defer"></script>
         <script src="/static/scripts/ticket-popup.js" defer="defer"></script>
     </head>
     <body>
-      <div class="diary-book">
+      <diary-book class="diary-book">
         <div class="diary-book__container">
           <div class="diary-book__head">
             <div class="db-title ticket-format">
@@ -20,14 +23,14 @@
           <div class="diary-book__body">
             <div class="diary-book__body-container">
               <div class="db-navigation">
-                <button class="nav-btn">Yoga</button>
-                <button class="nav-btn">Pilates</button>
-                <button class="nav-btn">Gym</button>
-                <button class="nav-btn">Ballet</button>
-                <button class="nav-btn">Dance</button>
-                <button class="nav-btn">Marathon</button>
-                <button class="nav-btn">Hiking</button>
-                <button class="nav-btn">Skiing</button>
+                <button class="nav-btn btnactive" data-fit-category="yoga" data-color="3ab0d1">Yoga</button>
+                <button class="nav-btn" data-fit-category="pilates" data-color="aee4ff">Pilates</button>
+                <button class="nav-btn" data-fit-category="gym" data-color="ff8080">Gym</button>
+                <button class="nav-btn" data-fit-category="ballet" data-color="ffd9d9">Ballet</button>
+                <button class="nav-btn" data-fit-category="dance" data-color="fee6c9">Dance</button>
+                <button class="nav-btn" data-fit-category="marathon" data-color="f9de33">Marathon</button>
+                <button class="nav-btn" data-fit-category="hiking" data-color="e5e5e5">Hiking</button>
+                <button class="nav-btn" data-fit-category="skiing" data-color="f4f2db">Skiing</button>
               </div>
               <div class="db-listing">
                 <div class="db-listing__container">
@@ -43,7 +46,7 @@
                     </activity-btn>
                   </div>
                   <div class="db-element">
-                    <activity-btn class="db-elem-btn" data-activity-id="sally_yoga">
+                    <activity-btn class="db-elem-btn" data-activity-id="sally_yoga" disabled>
                       <div class="db-element__image">
                         <img src="/static/images/image_15.png">
                       </div>
@@ -58,8 +61,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <ticket-popup class="ticket__popup">
+      </diary-book>
+      <ticket-popup class="ticket__popup" data-activity-id="group_yoga">
         <div class="ticket__popup-wrapper ticket-format">
           <div class="ticket__image">
             <img src="/static/images/image_17.png">

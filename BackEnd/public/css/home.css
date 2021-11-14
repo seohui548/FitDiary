@@ -29,8 +29,11 @@ h1 {
   font-weight: 400;
 }
 
+diary-book {
+  display: block;
+}
 .diary-book {
-    max-width: 60rem;
+    max-width: 1180px;
     margin: 0 auto;
     padding: 2rem;
 }
@@ -71,9 +74,9 @@ h1 {
 }
 
 .db-title h1 {
-  font-size: 3.2rem;
+  font-size: 3.6rem;
   margin: 0;
-  padding: 5px 40px;
+  padding: 5px 7rem;
   line-height: 1.1;
   text-transform: capitalize;
   letter-spacing: 5px;
@@ -97,14 +100,23 @@ h1 {
   writing-mode: vertical-rl;
   text-orientation: upright;
   border: none;
-  background-color: #3ab0d1;
-  color: #fff;
+  color: #333;
   border-radius: 10px 0 0 10px;
   cursor: pointer;
   padding: 10px 5px;
   font-size: 1.2rem;
   letter-spacing: -2px;
+  opacity: 0.6;
+  -webkit-box-shadow: inset -10px 0px 10px -7px rgba(0, 0, 0, 1);
+  box-shadow: inset -10px 0px 10px -7px rgba(0, 0, 0, 1);
+  transition: 0.2s opacity, 0.2s box-shadow;
 }
+.db-navigation .nav-btn:hover,
+.db-navigation .nav-btn.btnactive {
+  opacity: 1;
+  box-shadow: inset -10px 0px 10px -7px rgba(0, 0, 0, 0);
+}
+
 .db-navigation .nav-btn:not(:last-child) {
   margin-bottom: 5px;
 }
@@ -113,14 +125,20 @@ h1 {
   padding: 3rem 1rem;
   background-color: #3ab0d1;
   width: 100%;
-  max-width: 600px;
+  max-width: 900px;
+  transition: 0.3s background-color;
 }
 .db-listing__container {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  max-height: calc(1042px - 6rem);
+  overflow-y: auto;
   row-gap: 30px;
+  scrollbar-width: thick;
+  scrollbar-color: #666666 transparent;
 }
+
 .db-element {
   width: 50%;
   padding: 0 10px;
@@ -129,17 +147,37 @@ h1 {
 activity-btn {
   display: block;
 }
-.db-elem-btn {
+activity-btn[disabled] {
+  cursor: not-allowed;
+}
+activity-btn[disabled] .db-element__image img,
+activity-btn[disabled] .db-element__text {
+  opacity: 0.4;
+}
+activity-btn[disabled] .db-element__image::after {
+  content: "FULL";
+  position: absolute;
+  font-size: 7rem;
+  letter-spacing: 10px;
+  top: 50%;
+  left: 50%;
+  color: #ff7070;
+  transform: translate(-50%, -50%);
+}
+.db-elem-btn:not([disabled]) {
   cursor: pointer;
   transition: 0.3s opacity;
 }
-.db-elem-btn:hover {
+.db-elem-btn:not([disabled]):hover {
   opacity: 0.8;
 }
 .db-element__text {
   background: #fff;
   text-align: center;
   padding: 5px 0;
+}
+.db-element__image {
+  position: relative;
 }
 .db-element__image img {
   max-width: 100%;
@@ -198,8 +236,8 @@ activity-btn {
 .ticket__popup-wrapper .ticket__image {
   margin: 20px;
   border: 6px solid #4b430f;
-  width: 180px;
-  height: 180px;
+  width: 250px;
+  height: 250px;
 }
 .ticket__popup-wrapper .ticket__image img {
   display: block;
@@ -209,6 +247,7 @@ activity-btn {
 }
 .ticket__popup-wrapper .ticket__information {
   text-align: center;
+  min-width: 350px;
   border-left: 2px solid #000;
   border-right: 2px dashed #000;
   display: flex;
@@ -219,16 +258,16 @@ activity-btn {
   padding: 0 30px;
 }
 .ticket__popup-wrapper .ticket-textcontent h3 {
-  font-size: 20px;
+  font-size: 25px;
   margin: 0 0 20px;
   font-weight: 400;
 }
 .ticket__popup-wrapper .ticket-textcontent p {
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 .ticket__popup-wrapper .ticket-gradient {
-  height: 30px;
+  height: 40px;
   background-image: repeating-linear-gradient(-45deg,
       transparent,
       transparent 10px,
@@ -237,7 +276,7 @@ activity-btn {
 }
 
 .ticket__popup-wrapper .ticket__action {
-  padding: 10px 40px 10px 10px;
+  padding: 10px 60px 10px 20px;
   display: flex;
   align-items: center;
 }
@@ -245,15 +284,26 @@ activity-btn {
   writing-mode: tb-rl;
   background-color: #3ab0d1;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   display: block;
   position: relative;
   color: #fff;
   text-transform: uppercase;
-  font-size: 17px;
+  font-size: 20px;
+  padding: 35px 20px;
   cursor: pointer;
   transition: 0.2s background-color;
 }
+.ticket__popup-wrapper .ticket__action .ticket-btn[disabled] {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
 .ticket__popup-wrapper .ticket__action .ticket-btn:hover {
   background-color: #078090;
+}
+
+
+@keyframes listtransition {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }

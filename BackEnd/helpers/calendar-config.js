@@ -15,12 +15,11 @@ function calcTable(year) {
     for (let month = 0; month < arr.length; month++) {
 
         let startDayInWeek = new Date(year, month, 0).getDay() + 1;
-      
+
 
         let monthLong = new Date(year, month + 1,0).getDate() + 1;
 
-
-console.log(monthLong)
+        console.log(monthLong)
 
 
         let beforCount = 0;
