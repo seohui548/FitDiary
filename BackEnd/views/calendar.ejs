@@ -7,6 +7,8 @@
     <title>My Diary</title>
     <link href="/static/css/cal.css" rel="stylesheet" />
     <link href="/static/css/home.css" rel="stylesheet" />
+    <link href="/static/css/color-encoding.css" rel="stylesheet" />
+
     <script src="/static/scripts/calendar-config.js" defer="defer"></script>
     <script src="/static/scripts/day-popup.js"></script>
     <script src="/static/scripts/activity-day.js" defer="defer"></script>
@@ -33,10 +35,14 @@
             <div class="days">
                 <% for(let y = 0;y < calendar[10][x].length;y++) { %>
                 <div class="date" >
-                    <activity-day class="db-elem-btn">
-                        <div id="<%=calendar[10][x][y] %>">
-                            <%= calendar[10][x][y] %> <div class="content-events">Sally’s Yoga Class</div><div class="content-events2">Group Pilates Class</div>
+                    <activity-day class="db-elem-btn" data-day-index="<%= y %>">
+                      <% if(calendar[10][x][y]) { %>
+                        <div class="day-schedule" id="<%=calendar[10][x][y] %>">
+                            <span class="day-indicator"><%= calendar[10][x][y] %></span>
+                            <!-- <div class="content-events">Sally’s Yoga Class</div>
+                            <div class="content-events2">Group Pilates Class</div> -->
                         </div>
+                      <% } %>
                     </activity-day>
                 </div>
                 <% } %>
