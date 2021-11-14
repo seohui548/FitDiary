@@ -36,6 +36,9 @@ class DayPopup extends HTMLElement {
           <tr>
             <th scope="row">7</th>
             <td id="events" rowspan="2">
+            <div class="boxtitle"> Sally's yoga class </div>
+            <div class="boxtitle2"> 7:30-:8:30 <br> Zebra Studio,  <br>  
+            23 AVE, NYC</div>
             </td>
           </tr>
           <tr>
