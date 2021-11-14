@@ -75,7 +75,7 @@ window.activities = {
       id: "Group_Pilates",
       imgurl: "image_21.png",
       title: "Group Pilates Class",
-      date: "M/W 15:00 ~ 16:30",
+      date: "M/W 14:00 ~ 15:00",
       address: "Hailey Studio, 4F, NYC",
       max_capacity: 8,
       current_capacity: 1,
